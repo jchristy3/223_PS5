@@ -1,0 +1,31 @@
+First attempt at Problem 3. I forgot how to computer science and thought the method would permanently effect
+	n as if it were a constant. It wasn't till after this mess that I realized that it was simply asking me 
+	print it out in reverse. The swapTwo method was the result of me trying to figure out where things were
+	going wrong.
+	
+	/*public static void swapTwo(int n){
+		if(n > 9){
+			char[] c = Integer.toString(n).toCharArray();
+			int last = c.length - 1;
+			char temp = c[0]; //save c[0] before it is overwritten
+			c[0] = c[last]; //move last number into first position
+			c[last] = temp;	//move first number into last position
+			System.out.print(c);
+		}
+	}
+
+	  public static void reverseDisplay(int n){
+		if(n > 9){	//ensure that there are at least 2 digits to switch
+			String s = Integer.toString(n);
+			char[] c = s.toCharArray();
+			char temp = c[0];
+			int last = c.length - 1;
+			c[0] = c[last]; //move last number into first position
+			c[last] = temp; //move first number into last position
+			int k = Integer.parseInt(s.substring(1, s.length() - 1));
+			n -= k * 10;	//remove the portion to be reversed
+			reverseDisplay(k);
+			n += k * 10; //add the now-reversed portion back into n
+		}
+		else System.out.print(n);
+	}*/
